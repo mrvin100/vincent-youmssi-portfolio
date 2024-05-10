@@ -1,5 +1,5 @@
 # vincent youmssi portfolio
-# # Why you should contact me for your work and projects
+## Why you should contact me for your work and projects
 
 Are you looking for a reliable and experienced web developer to help you realize your projects?
 
