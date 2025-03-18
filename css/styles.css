@@ -465,18 +465,18 @@ header.active{
     background: linear-gradient(to right, var(--main-color) 0%, var(--main-color)  80%, #e48c8b 80%, #e48c8b  100%);
 }
 
-/* for Designer */
+/* for Tools & Technologies */
 
 .skills .box_container > div:nth-of-type(1) .box:nth-of-type(2) li:nth-of-type(1):after{
-    background: linear-gradient(to right, var(--main-color) 0%, var(--main-color)  70%, #e48c8b 70%, #e48c8b  100%);
+    background: linear-gradient(to right, var(--main-color) 0%, var(--main-color)  60%, #e48c8b 60%, #e48c8b  100%);
 }
 
 .skills .box_container > div:nth-of-type(1) .box:nth-of-type(2) li:nth-of-type(2):after{
-    background: linear-gradient(to right, var(--main-color) 0%, var(--main-color)  80%, #e48c8b 80%, #e48c8b  100%);
+    background: linear-gradient(to right, var(--main-color) 0%, var(--main-color)  85%, #e48c8b 85%, #e48c8b  100%);
 }
 
 .skills .box_container > div:nth-of-type(1) .box:nth-of-type(2) li:nth-of-type(3):after{
-    background: linear-gradient(to right, var(--main-color) 0%, var(--main-color)  50%, #e48c8b 50%, #e48c8b  100%);
+    background: linear-gradient(to right, var(--main-color) 0%, var(--main-color)  70%, #e48c8b 70%, #e48c8b  100%);
 }
 
 .skills .box_container > div:nth-of-type(1) .box:nth-of-type(2) li:nth-of-type(4):after{
@@ -486,19 +486,41 @@ header.active{
 /* for Backend developer */
 
 .skills .box_container > div:nth-of-type(2) .box:nth-of-type(1) li:nth-of-type(1):after{
-    background: linear-gradient(to right, var(--main-color) 0%, var(--main-color)  80%, #e48c8b 80%, #e48c8b  100%);
+    background: linear-gradient(to right, var(--main-color) 0%, var(--main-color)  70%, #e48c8b 70%, #e48c8b  100%);
 }
 
 .skills .box_container > div:nth-of-type(2) .box:nth-of-type(1) li:nth-of-type(2):after{
-    background: linear-gradient(to right, var(--main-color) 0%, var(--main-color)  60%, #e48c8b 60%, #e48c8b  100%);
+    background: linear-gradient(to right, var(--main-color) 0%, var(--main-color)  75%, #e48c8b 75%, #e48c8b  100%);
 }
 
 .skills .box_container > div:nth-of-type(2) .box:nth-of-type(1) li:nth-of-type(3):after{
-    background: linear-gradient(to right, var(--main-color) 0%, var(--main-color)  65%, #e48c8b 65%, #e48c8b  100%);
+    background: linear-gradient(to right, var(--main-color) 0%, var(--main-color)  70%, #e48c8b 70%, #e48c8b  100%);
 }
 
 .skills .box_container > div:nth-of-type(2) .box:nth-of-type(1) li:nth-of-type(4):after{
-    background: linear-gradient(to right, var(--main-color) 0%, var(--main-color)  40%, #e48c8b 40%, #e48c8b  100%);
+    background: linear-gradient(to right, var(--main-color) 0%, var(--main-color)  65%, #e48c8b 65%, #e48c8b  100%);
+}
+
+/* for Digital Marketing */
+
+.skills .box_container > div:nth-of-type(2) .box:nth-of-type(2) li:nth-of-type(1):after{
+    background: linear-gradient(to right, var(--main-color) 0%, var(--main-color)  80%, #e48c8b 80%, #e48c8b  100%);
+}
+
+.skills .box_container > div:nth-of-type(2) .box:nth-of-type(2) li:nth-of-type(2):after{
+    background: linear-gradient(to right, var(--main-color) 0%, var(--main-color)  85%, #e48c8b 85%, #e48c8b  100%);
+}
+
+.skills .box_container > div:nth-of-type(2) .box:nth-of-type(2) li:nth-of-type(3):after{
+    background: linear-gradient(to right, var(--main-color) 0%, var(--main-color)  75%, #e48c8b 75%, #e48c8b  100%);
+}
+
+.skills .box_container > div:nth-of-type(2) .box:nth-of-type(2) li:nth-of-type(4):after{
+    background: linear-gradient(to right, var(--main-color) 0%, var(--main-color)  70%, #e48c8b 70%, #e48c8b  100%);
+}
+
+.skills .box_container > div:nth-of-type(2) .box:nth-of-type(2) li:nth-of-type(5):after{
+    background: linear-gradient(to right, var(--main-color) 0%, var(--main-color)  75%, #e48c8b 75%, #e48c8b  100%);
 }
 
 
@@ -570,10 +592,12 @@ header.active{
     padding: 1rem;
     text-transform: capitalize;
     display: none;
-    grid-template-areas: "a ."
-    ". b"
-    "c ."
-    ". d";
+    grid-template-areas: 
+        "a ."
+        ". b"
+        "c ."
+        ". d"
+        "e .";
     grid-template-columns: repeat(2, 1fr);
 }
 
@@ -595,6 +619,10 @@ header.active{
 
 .qualification .box:nth-of-type(4){
     grid-area: d;
+}
+
+.qualification .box:nth-of-type(5){
+    grid-area: e;
 }
 
 .qualification .box h4{
@@ -627,7 +655,6 @@ header.active{
     left: 0;
     bottom: 0;
     right: -1px;
-    /* border: var(--border0); */
 }
 
 .qualification .box:nth-of-type(odd)::after{
@@ -660,6 +687,15 @@ header.active{
 
 .qualification .box:nth-of-type(even)::before{
     left: -.6rem;
+}
+
+/* Add specific styling for the last item */
+.qualification .box:last-of-type{
+    margin-bottom: 1rem;
+}
+
+.qualification .box:last-of-type::before{
+    border-color: var(--main-color);
 }
 
 .qualification .box:nth-of-type(odd){
