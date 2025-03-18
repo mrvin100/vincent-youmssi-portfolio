@@ -592,10 +592,12 @@ header.active{
     padding: 1rem;
     text-transform: capitalize;
     display: none;
-    grid-template-areas: "a ."
-    ". b"
-    "c ."
-    ". d";
+    grid-template-areas: 
+        "a ."
+        ". b"
+        "c ."
+        ". d"
+        "e .";
     grid-template-columns: repeat(2, 1fr);
 }
 
@@ -617,6 +619,10 @@ header.active{
 
 .qualification .box:nth-of-type(4){
     grid-area: d;
+}
+
+.qualification .box:nth-of-type(5){
+    grid-area: e;
 }
 
 .qualification .box h4{
@@ -649,7 +655,6 @@ header.active{
     left: 0;
     bottom: 0;
     right: -1px;
-    /* border: var(--border0); */
 }
 
 .qualification .box:nth-of-type(odd)::after{
@@ -682,6 +687,15 @@ header.active{
 
 .qualification .box:nth-of-type(even)::before{
     left: -.6rem;
+}
+
+/* Add specific styling for the last item */
+.qualification .box:last-of-type{
+    margin-bottom: 1rem;
+}
+
+.qualification .box:last-of-type::before{
+    border-color: var(--main-color);
 }
 
 .qualification .box:nth-of-type(odd){
