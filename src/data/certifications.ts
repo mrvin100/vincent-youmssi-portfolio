@@ -6,6 +6,7 @@ export interface Certification {
 
 export interface CertificationGroup {
   trainer: string;
+  url?: string;
   certifications: Certification[];
 }
 
@@ -68,13 +69,18 @@ export const certificationGroups: CertificationGroup[] = [
     ],
   },
   {
-    trainer: "Google",
+    trainer: "Microsoft Learn",
+    url: "https://learn.microsoft.com/fr-fr/users/mrvin100/",
     certifications: [
-      {
-        name: "Google Digital Marketing & E-commerce",
-        summary: "Marketing strategy, SEO, SEM, social media, email marketing, e-commerce analytics.",
-        url: "https://www.credly.com/badges/example-vincent-youmssi",
-      },
+      { name: "Build JavaScript Applications Using TypeScript", summary: "Complete learning path." },
+      { name: "Organize Code Using TypeScript Namespaces" },
+      { name: "Access External Libraries from TypeScript" },
+      { name: "Define Generics in TypeScript" },
+      { name: "Declare and Instantiate Classes in TypeScript" },
+      { name: "Develop Typed Functions Using TypeScript" },
+      { name: "Implement Interfaces in TypeScript" },
+      { name: "Declare Variable Types in TypeScript" },
+      { name: "Get Started with TypeScript" },
     ],
   },
 ];

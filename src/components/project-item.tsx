@@ -53,7 +53,7 @@ export function ProjectItem({ item }: { item: Project }) {
               href={item.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block text-sm text-blue-600 underline underline-offset-4 hover:text-blue-800"
+              className="inline-block text-sm text-neutral-600 underline underline-offset-4 hover:text-neutral-900"
             >
               Demo
             </a>
@@ -73,7 +73,7 @@ export function ProjectItem({ item }: { item: Project }) {
                         href={sub.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-blue-600 underline underline-offset-4 hover:text-blue-800"
+                        className="text-neutral-600 underline underline-offset-4 hover:text-neutral-900"
                       >
                         Demo
                       </a>

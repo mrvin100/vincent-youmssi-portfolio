@@ -25,7 +25,7 @@ export default function Home() {
           <Link
             key={item.href}
             href={item.href}
-            className="text-blue-600 underline underline-offset-4 hover:text-blue-800"
+            className="text-neutral-600 underline underline-offset-4 hover:text-neutral-900"
           >
             {item.label}
           </Link>

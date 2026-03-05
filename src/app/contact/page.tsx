@@ -44,7 +44,7 @@ export default function ContactPage() {
             href="https://t.me/mrvin100"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-600 underline underline-offset-4 hover:text-blue-800"
+            className="text-neutral-600 underline underline-offset-4 hover:text-neutral-900"
           >
             Telegram
           </a>
@@ -53,7 +53,7 @@ export default function ContactPage() {
             href="https://youtube.com/@jean-doe"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-600 underline underline-offset-4 hover:text-blue-800"
+            className="text-neutral-600 underline underline-offset-4 hover:text-neutral-900"
           >
             YouTube
           </a>
@@ -62,7 +62,7 @@ export default function ContactPage() {
             href="https://devpost.com/mrvin100"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-600 underline underline-offset-4 hover:text-blue-800"
+            className="text-neutral-600 underline underline-offset-4 hover:text-neutral-900"
           >
             Devpost
           </a>
