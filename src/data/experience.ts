@@ -13,7 +13,7 @@ export const experience: Experience[] = [
     role: "Software Engineer",
     type: "Internship",
     company: "ADAF Foundation",
-    location: "Nouvelle route Bastos, Yaoundé",
+    location: "Nouvelle route Bastos, Yaoundé Cameroon",
     period: "Jun 2025 – Sep 2025",
     description: [
       "Built the foundation's website (Home, About, Partners, Blog) on both frontend and backend using Next.js and Strapi CMS.",
@@ -36,7 +36,7 @@ export const experience: Experience[] = [
     role: "Web Developer",
     type: "Internship",
     company: "PKFokam Research Center",
-    location: "Tradex Emana, Yaoundé",
+    location: "Tradex Emana, Yaoundé Cameroon",
     period: "Sep 2024 – Dec 2024",
     description: [
       "Developed a web application using React and explored all its basic concepts (hooks, states, props, context, etc.) and integrated tests (unit, integration, e2e) using Jest and Cypress.",
@@ -69,11 +69,11 @@ export const experience: Experience[] = [
     role: "Coordinator / Manager",
     type: "On-site",
     company: "Team48",
-    location: "Tradex Emana, Yaoundé",
+    location: "Tradex Emana, Yaoundé Cameroon",
     period: "Nov 2023 – May 2024",
     description: [
       "Worked at a marketing and web agency where I managed client appointments for commercial purposes and was also responsible for validating the quality of projects ready for delivery, both technically and non-technically.",
     ],
-    tech: [],
+    tech: ["HTML5", "CSS3", "JavaScript", "Font Awesome", "Boxicons", "Canvas", "Google Docs", "Google Meet", "Google Sheets", "Git", "GitHub"],
   },
 ];

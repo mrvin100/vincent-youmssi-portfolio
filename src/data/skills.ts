@@ -8,19 +8,14 @@ export const skills: SkillGroup[] = [
     category: "Engineering",
     items: [
       "Software Engineer",
-      "Frontend Developer",
-      "Full-Stack Developer",
-      "Web Developer",
-      "Lead Frontend Developer",
+      "Associate Project Manager",
     ],
   },
   {
     category: "Digital Marketing",
     items: [
-      "Content Creator",
-      "Campaign Strategist",
+      "Content Creator on LinkedIn",
       "Associate Marketing Strategist",
-      "Social Media Manager",
     ],
   },
   {
@@ -29,9 +24,7 @@ export const skills: SkillGroup[] = [
       "Problem Solving",
       "Communication",
       "Team Collaboration",
-      "Team Leadership",
       "Adaptability",
-      "Project Management",
     ],
   },
 ];

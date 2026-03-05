@@ -13,19 +13,13 @@ export const education: Education[] = [
     period: "Jun 2023 – Now",
   },
   {
-    degree: "FreeCodeCamp & Openclassrooms Certificates",
-    institution: "FreeCodeCamp & Openclassrooms",
-    location: "Online",
-    period: "",
-  },
-  {
-    degree: "University Degree — Technology in Automation and Industrial Computing",
+    degree: "University Diploma of Technology in Automation and Industrial Computing",
     institution: "Fotso Victor University Institute of Technology",
     location: "Nkouo, Bandjoun, Cameroon",
     period: "Jun 2022",
   },
   {
-    degree: "Baccalaureate — Mathematics and Physical Sciences",
+    degree: "Hight School Dimploma — Mathematics and Physical Sciences",
     institution: "Ndogpassi High School",
     location: "Entrée Lycée, Douala, Cameroon",
     period: "May 2020",
