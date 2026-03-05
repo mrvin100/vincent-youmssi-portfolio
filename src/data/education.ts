@@ -2,26 +2,32 @@ export interface Education {
   degree: string;
   institution: string;
   location: string;
-  graduationDate: string;
+  period: string;
 }
 
 export const education: Education[] = [
   {
-    degree: "Professional Qualification Certificate in Software Development",
+    degree: "Software Engineering",
     institution: "PKFokam Institute of Excellence",
-    location: "Yaoundé",
-    graduationDate: "Jun 2025",
+    location: "Tradex Emana, Yaoundé, Cameroon",
+    period: "Jun 2023 – Now",
   },
   {
-    degree: "University Degree in Technology — Automation and Industrial Computing",
+    degree: "FreeCodeCamp & Openclassrooms Certificates",
+    institution: "FreeCodeCamp & Openclassrooms",
+    location: "Online",
+    period: "",
+  },
+  {
+    degree: "University Degree — Technology in Automation and Industrial Computing",
     institution: "Fotso Victor University Institute of Technology",
-    location: "Bandjoun",
-    graduationDate: "Jun 2022",
+    location: "Nkouo, Bandjoun, Cameroon",
+    period: "Jun 2022",
   },
   {
-    degree: "Baccalaureate in Mathematics and Physical Sciences",
+    degree: "Baccalaureate — Mathematics and Physical Sciences",
     institution: "Ndogpassi High School",
-    location: "Douala",
-    graduationDate: "May 2020",
+    location: "Entrée Lycée, Douala, Cameroon",
+    period: "May 2020",
   },
 ];

@@ -5,7 +5,7 @@ import { personal } from "@/data/personal";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: `Get in touch with ${personal.name}. Schedule a call, view the resume, or connect on social media.`,
+  description: `Get in touch with ${personal.name}. Schedule a call or connect on social media.`,
 };
 
 export default function ContactPage() {
@@ -33,30 +33,6 @@ export default function ContactPage() {
             Schedule on Cal.com
           </a>
         </Button>
-      </div>
-
-      <Separator />
-
-      <div className="space-y-4">
-        <h2 className="text-xl font-semibold text-neutral-900">Resume</h2>
-        <div className="flex flex-col gap-2">
-          <a
-            href={personal.cvLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-600 underline underline-offset-4 hover:text-blue-800"
-          >
-            View resume online (Google Docs)
-          </a>
-          <a
-            href="/resume-vincent-youmssi.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-600 underline underline-offset-4 hover:text-blue-800"
-          >
-            Download resume (PDF)
-          </a>
-        </div>
       </div>
 
       <Separator />

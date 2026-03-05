@@ -19,7 +19,8 @@ export default function EducationPage() {
             <h3 className="font-semibold text-neutral-900">{item.degree}</h3>
             <p className="text-neutral-600">{item.institution}</p>
             <p className="text-sm text-neutral-500">
-              {item.location} · Graduated {item.graduationDate}
+              {item.location}
+              {item.period && ` · ${item.period}`}
             </p>
           </article>
         ))}

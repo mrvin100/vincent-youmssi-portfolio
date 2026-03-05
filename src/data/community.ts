@@ -1,23 +1,24 @@
 export interface CommunityEntry {
   name: string;
-  type: string;
+  role: string;
   period: string;
+  location?: string;
   description: string;
 }
 
 export const community: CommunityEntry[] = [
   {
-    name: "savEarth",
-    type: "Open Source Contribution",
-    period: "2024",
+    name: "48 Projects",
+    role: "Organisation Member — K48",
+    period: "Jul 2025 – Nov 2025",
+    location: "Tradex Emana, Yaoundé",
     description:
-      "Contributing to passionate projects, making new friends, and learning from the community. Focused on environmental and sustainability-related initiatives.",
+      "Contributed to an organisation to build five full-stack web apps (Grade, internship, clinical, and registration).",
   },
   {
-    name: "Team Lead of Projects — Team48",
-    type: "Leadership",
-    period: "2023 – 2024",
-    description:
-      "Managed a team of 3 developers across 5 frontend projects. Collaborated on and reviewed teammates' code. Shared and contributed to coworkers' team tasks.",
+    name: "Blur App",
+    role: "Project Owner | Community Builder | Contributor",
+    period: "Aug 2025 – Feb 2026",
+    description: "",
   },
 ];

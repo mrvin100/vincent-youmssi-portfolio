@@ -23,15 +23,13 @@ export default function AboutPage() {
 
       <div className="flex gap-8 text-sm">
         <div>
-          <p className="text-2xl font-bold text-neutral-900">2+</p>
+          <p className="text-2xl font-bold text-neutral-900">
+            {personal.yearsOfExp}
+          </p>
           <p className="text-neutral-500">Years experience</p>
         </div>
         <div>
-          <p className="text-2xl font-bold text-neutral-900">5+</p>
-          <p className="text-neutral-500">Projects</p>
-        </div>
-        <div>
-          <p className="text-2xl font-bold text-neutral-900">3+</p>
+          <p className="text-2xl font-bold text-neutral-900">6+</p>
           <p className="text-neutral-500">Companies</p>
         </div>
       </div>
@@ -44,6 +42,38 @@ export default function AboutPage() {
           <SkillGroup key={group.category} group={group} />
         ))}
       </div>
+
+      <Separator />
+
+      <div className="flex gap-12 text-sm">
+        <div>
+          <h2 className="mb-2 font-semibold text-neutral-900">Languages</h2>
+          <ul className="space-y-1 text-neutral-600">
+            {personal.languages.map((lang) => (
+              <li key={lang}>{lang}</li>
+            ))}
+          </ul>
+        </div>
+        <div>
+          <h2 className="mb-2 font-semibold text-neutral-900">Hobbies</h2>
+          <ul className="space-y-1 text-neutral-600">
+            {personal.hobbies.map((h) => (
+              <li key={h}>{h}</li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
+      <p className="text-sm text-neutral-400">
+        <a
+          href={personal.cvLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline underline-offset-4 hover:text-neutral-500"
+        >
+          Resume
+        </a>
+      </p>
     </section>
   );
 }

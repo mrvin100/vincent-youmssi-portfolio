@@ -20,16 +20,18 @@ export function ExperienceItem({ item }: { item: Experience }) {
             </span>
           </p>
           <p className="text-sm text-neutral-500">
-            {item.period} · {item.location}
+            {item.period} · {item.type} · {item.location}
           </p>
         </div>
       </AccordionTrigger>
       <AccordionContent>
-        <ul className="mb-3 list-inside list-disc space-y-1 text-neutral-600">
-          {item.description.map((point, i) => (
-            <li key={i}>{point}</li>
-          ))}
-        </ul>
+        {item.description.length > 0 && (
+          <ul className="mb-3 list-inside list-disc space-y-1 text-neutral-600">
+            {item.description.map((point, i) => (
+              <li key={i}>{point}</li>
+            ))}
+          </ul>
+        )}
         {item.tech.length > 0 && (
           <div className="flex flex-wrap gap-2">
             {item.tech.map((t) => (

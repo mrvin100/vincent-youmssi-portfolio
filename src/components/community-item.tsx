@@ -7,8 +7,13 @@ export function CommunityItem({ item }: { item: CommunityEntry }) {
         <h3 className="font-semibold text-neutral-900">{item.name}</h3>
         <span className="text-sm text-neutral-500">{item.period}</span>
       </div>
-      <p className="text-sm text-neutral-500">{item.type}</p>
-      <p className="text-neutral-600">{item.description}</p>
+      <p className="text-sm text-neutral-500">{item.role}</p>
+      {item.location && (
+        <p className="text-sm text-neutral-400">{item.location}</p>
+      )}
+      {item.description && (
+        <p className="text-neutral-600">{item.description}</p>
+      )}
     </article>
   );
 }

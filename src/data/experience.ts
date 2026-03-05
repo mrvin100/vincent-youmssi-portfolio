@@ -1,5 +1,6 @@
 export interface Experience {
   role: string;
+  type: string;
   company: string;
   location: string;
   period: string;
@@ -9,39 +10,70 @@ export interface Experience {
 
 export const experience: Experience[] = [
   {
-    role: "ReactJS Developer",
-    company: "PKFokam Research Center",
-    location: "Yaoundé",
-    period: "Sep 2024 – Present",
+    role: "Software Engineer",
+    type: "Internship",
+    company: "ADAF Foundation",
+    location: "Nouvelle route Bastos, Yaoundé",
+    period: "Jun 2025 – Sep 2025",
     description: [
-      "Developed a web application utilizing ReactJS, TailwindCSS, TypeScript, and ShadcnUI to create a visually appealing and user-friendly interface for increased user engagement.",
-      "Implemented state management with Redux.js and utilized Axios for managing requests, resulting in a seamless and efficient app experience with minimal delays.",
-      "Led a team of developers using Microsoft Teams to successfully collaborate on the project, resulting in the completion of the project ahead of schedule and under budget.",
+      "Built the foundation's website (Home, About, Partners, Blog) on both frontend and backend using Next.js and Strapi CMS.",
     ],
-    tech: ["React.js", "TypeScript", "TailwindCSS", "shadcn/ui", "Redux.js", "Axios"],
+    tech: ["Next.js", "Strapi CMS"],
   },
   {
-    role: "NextJS Developer",
-    company: "Freelance",
-    location: "Yaoundé",
-    period: "May 2024 – Nov 2024",
+    role: "Software Engineer",
+    type: "Remote",
+    company: "Yaakyi LTD",
+    location: "United Kingdom",
+    period: "Jan 2025 – Jun 2025",
     description: [
-      "Implemented API consumption best practices for routing, caching, and data fetching in NextJS application, resulting in a 40% decrease in page load times.",
-      "Developed and implemented SSR (Server-Side Rendering) techniques in NextJS application, leading to a 50% increase in SEO performance metrics.",
-      "Utilized best architecture practices to optimize the source app router functionality, resulting in a 30% improvement in overall application performance.",
+      "Designed the new homepage for Deluxe Yachting Zurich, a yacht charter agency in Germany.",
+      "Led the development of the Kelanie Designs project (\"Coming Soon\" page), an Italian luxury jewelry brand.",
     ],
-    tech: ["Next.js", "TypeScript", "SSR", "App Router"],
+    tech: ["Next.js", "TypeScript", "TailwindCSS"],
+  },
+  {
+    role: "Web Developer",
+    type: "Internship",
+    company: "PKFokam Research Center",
+    location: "Tradex Emana, Yaoundé",
+    period: "Sep 2024 – Dec 2024",
+    description: [
+      "Developed a web application using React and explored all its basic concepts (hooks, states, props, context, etc.) and integrated tests (unit, integration, e2e) using Jest and Cypress.",
+    ],
+    tech: ["React.js", "Jest", "Cypress"],
+  },
+  {
+    role: "Lead Frontend Developer",
+    type: "Remote",
+    company: "Webinflu | Flair",
+    location: "Lille Saint-Martin-la-Pallu, France",
+    period: "Jul 2024 – Jan 2026",
+    description: [
+      "Responsible for the complete frontend architecture and its development for the MyFlair project.",
+    ],
+    tech: ["Next.js", "TypeScript", "TailwindCSS", "shadcn/ui"],
   },
   {
     role: "Frontend Web Developer",
+    type: "Remote",
+    company: "Freelance | Mappeos",
+    location: "Angers, France",
+    period: "May 2024 – Dec 2024",
+    description: [
+      "Created web interfaces (dashboard, privacy pages) and managed the loading strategy and reusable components of the Mappeos web application.",
+    ],
+    tech: ["Next.js", "TypeScript", "TailwindCSS"],
+  },
+  {
+    role: "Coordinator / Manager",
+    type: "On-site",
     company: "Team48",
-    location: "Yaoundé",
+    location: "Tradex Emana, Yaoundé",
     period: "Nov 2023 – May 2024",
     description: [
-      "Developed and optimized landing page websites using HTML5, CSS3, and Javascript, resulting in a 30% increase in site traffic and a 20% decrease in bounce rate.",
-      "Implemented icon libraries such as Boxicons and Font Awesome to enhance the user experience, leading to a 15% increase in click-through rates on landing pages.",
-      "Managed a team of developers using Microsoft Teams, organizing regular communication meetings via Google Meet to ensure project deadlines were met efficiently.",
+      "Marketing and web agency: managed client appointments for commercial purposes and validated the quality of projects ready for delivery, both technically and non-technically.",
     ],
-    tech: ["HTML5", "CSS3", "JavaScript", "Boxicons", "Font Awesome"],
+    tech: [],
   },
 ];
