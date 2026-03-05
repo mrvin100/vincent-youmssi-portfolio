@@ -39,30 +39,32 @@ export default function ContactPage() {
 
       <div className="space-y-4">
         <h2 className="text-xl font-semibold text-neutral-900">Social</h2>
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm">
           <a
-            href={`https://github.com/${personal.social.github}`}
+            href="https://t.me/mrvin100"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 underline underline-offset-4 hover:text-blue-800"
           >
-            GitHub
+            Telegram
           </a>
+          <span className="text-neutral-300">·</span>
           <a
-            href={`https://linkedin.com/in/${personal.social.linkedin}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-600 underline underline-offset-4 hover:text-blue-800"
-          >
-            LinkedIn
-          </a>
-          <a
-            href={`https://youtube.com/${personal.social.youtube}`}
+            href="https://youtube.com/@jean-doe"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 underline underline-offset-4 hover:text-blue-800"
           >
             YouTube
+          </a>
+          <span className="text-neutral-300">·</span>
+          <a
+            href="https://devpost.com/mrvin100"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 underline underline-offset-4 hover:text-blue-800"
+          >
+            Devpost
           </a>
         </div>
       </div>

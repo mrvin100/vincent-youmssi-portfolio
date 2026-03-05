@@ -22,14 +22,6 @@ export function Footer() {
           >
             LinkedIn
           </a>
-          <a
-            href={`https://youtube.com/${personal.social.youtube}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="transition-colors hover:text-neutral-900"
-          >
-            YouTube
-          </a>
         </div>
       </div>
     </footer>

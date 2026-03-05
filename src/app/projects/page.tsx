@@ -5,7 +5,7 @@ import { projects } from "@/data/projects";
 export const metadata: Metadata = {
   title: "Projects",
   description:
-    "Projects and applications built by Vincent Youmssi.",
+    "Projects, contributions, and applications built by Vincent Youmssi.",
 };
 
 export default function ProjectsPage() {
