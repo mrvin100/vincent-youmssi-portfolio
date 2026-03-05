@@ -2,7 +2,7 @@ import { personal } from "@/data/personal";
 
 export function Footer() {
   return (
-    <footer className="py-8 text-sm text-neutral-500">
+    <footer className="py-8 text-sm text-muted-foreground">
       <div className="flex items-center justify-between">
         <p>&copy; {new Date().getFullYear()} {personal.name}</p>
         <div className="flex gap-4">
@@ -10,7 +10,7 @@ export function Footer() {
             href={`https://github.com/${personal.social.github}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="transition-colors hover:text-neutral-900"
+            className="transition-colors hover:text-foreground"
           >
             GitHub
           </a>
@@ -18,7 +18,7 @@ export function Footer() {
             href={`https://linkedin.com/in/${personal.social.linkedin}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="transition-colors hover:text-neutral-900"
+            className="transition-colors hover:text-foreground"
           >
             LinkedIn
           </a>

@@ -14,9 +14,9 @@ export function CertificationGroupItem({ group }: { group: CertificationGroup })
     <AccordionItem value={group.trainer}>
       <AccordionTrigger className="hover:no-underline">
         <div className="flex flex-col items-start gap-1 text-left">
-          <p className="font-semibold text-neutral-900">{group.trainer}</p>
+          <p className="font-semibold text-foreground">{group.trainer}</p>
           <div className="flex items-center gap-2">
-            <p className="text-sm text-neutral-500">
+            <p className="text-sm text-muted-foreground">
               {count} {count === 1 ? "certificate" : "certificates"}
             </p>
             {group.url && (
@@ -24,7 +24,7 @@ export function CertificationGroupItem({ group }: { group: CertificationGroup })
                 href={group.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-xs text-neutral-500 underline underline-offset-4 hover:text-neutral-900"
+                className="text-xs text-muted-foreground underline underline-offset-4 hover:text-foreground"
                 onClick={(e) => e.stopPropagation()}
               >
                 Verify
@@ -38,7 +38,7 @@ export function CertificationGroupItem({ group }: { group: CertificationGroup })
           {group.certifications.map((cert) => (
             <li key={cert.name} className="flex flex-col gap-0.5">
               <div className="flex items-center gap-2">
-                <span className="text-sm font-medium text-neutral-800">
+                <span className="text-sm font-medium text-foreground/90">
                   {cert.name}
                 </span>
                 {cert.url && (
@@ -46,14 +46,14 @@ export function CertificationGroupItem({ group }: { group: CertificationGroup })
                     href={cert.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-xs text-neutral-600 underline underline-offset-4 hover:text-neutral-900"
+                    className="text-xs text-muted-foreground underline underline-offset-4 hover:text-foreground"
                   >
                     Verify
                   </a>
                 )}
               </div>
               {cert.summary && (
-                <p className="text-sm text-neutral-500">{cert.summary}</p>
+                <p className="text-sm text-muted-foreground">{cert.summary}</p>
               )}
             </li>
           ))}

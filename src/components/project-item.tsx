@@ -20,10 +20,10 @@ export function ProjectItem({ item }: { item: Project }) {
       <AccordionTrigger className="hover:no-underline">
         <div className="flex flex-col items-start gap-1 text-left">
           <div className="flex items-center gap-2">
-            <p className="font-semibold text-neutral-900">{item.name}</p>
+            <p className="font-semibold text-foreground">{item.name}</p>
             <Badge variant={badgeVariant[item.type]}>{item.type}</Badge>
           </div>
-          <p className="text-sm text-neutral-500">
+          <p className="text-sm text-muted-foreground">
             {item.role} · {item.period}
           </p>
         </div>
@@ -31,7 +31,7 @@ export function ProjectItem({ item }: { item: Project }) {
       <AccordionContent>
         <div className="space-y-3">
           {item.description.length > 0 && (
-            <ul className="list-inside list-disc space-y-1 text-neutral-600">
+            <ul className="list-inside list-disc space-y-1 text-muted-foreground">
               {item.description.map((point, i) => (
                 <li key={i}>{point}</li>
               ))}
@@ -53,7 +53,7 @@ export function ProjectItem({ item }: { item: Project }) {
               href={item.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block text-sm text-neutral-600 underline underline-offset-4 hover:text-neutral-900"
+              className="inline-block text-sm text-muted-foreground underline underline-offset-4 hover:text-foreground"
             >
               Demo
             </a>
@@ -61,19 +61,19 @@ export function ProjectItem({ item }: { item: Project }) {
 
           {item.subProjects && item.subProjects.length > 0 && (
             <div className="pt-2">
-              <p className="mb-2 text-sm font-medium text-neutral-700">
+              <p className="mb-2 text-sm font-medium text-foreground/80">
                 Projects
               </p>
               <ul className="space-y-1">
                 {item.subProjects.map((sub) => (
-                  <li key={sub.name} className="flex items-center gap-2 text-sm text-neutral-600">
+                  <li key={sub.name} className="flex items-center gap-2 text-sm text-muted-foreground">
                     <span>{sub.name}</span>
                     {sub.url && (
                       <a
                         href={sub.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-neutral-600 underline underline-offset-4 hover:text-neutral-900"
+                        className="text-muted-foreground underline underline-offset-4 hover:text-foreground"
                       >
                         Demo
                       </a>

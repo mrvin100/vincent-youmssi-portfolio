@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 const links = [
   { href: "/", label: "Home" },
@@ -16,11 +17,14 @@ export function Nav() {
         <Link
           key={link.href}
           href={link.href}
-          className="text-neutral-500 transition-colors hover:text-neutral-900"
+          className="text-muted-foreground transition-colors hover:text-foreground"
         >
           {link.label}
         </Link>
       ))}
+      <div className="ml-auto">
+        <ThemeToggle />
+      </div>
     </nav>
   );
 }

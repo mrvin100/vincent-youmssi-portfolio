@@ -10,15 +10,15 @@ export const metadata: Metadata = {
 export default function EducationPage() {
   return (
     <section className="space-y-8">
-      <h1 className="text-3xl font-bold tracking-tight text-neutral-900">
+      <h1 className="text-3xl font-bold tracking-tight text-foreground">
         Education
       </h1>
-      <div className="divide-y divide-neutral-200">
+      <div className="divide-y divide-border">
         {education.map((item) => (
           <article key={item.institution} className="flex flex-col gap-1 py-4">
-            <h3 className="font-semibold text-neutral-900">{item.degree}</h3>
-            <p className="text-neutral-600">{item.institution}</p>
-            <p className="text-sm text-neutral-500">
+            <h3 className="font-semibold text-foreground">{item.degree}</h3>
+            <p className="text-muted-foreground">{item.institution}</p>
+            <p className="text-sm text-muted-foreground/70">
               {item.location}
               {item.period && ` · ${item.period}`}
             </p>
