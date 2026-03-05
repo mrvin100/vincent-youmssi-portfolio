@@ -16,28 +16,6 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    name: "MyFlair",
-    role: "Lead Frontend Developer — Webinflu",
-    period: "Jul 2024 – Jan 2026",
-    type: "Freelance",
-    description: [
-      "Responsible for the complete frontend architecture and its development for the MyFlair project.",
-    ],
-    tech: ["Next.js", "TypeScript", "TailwindCSS", "shadcn/ui", "Prisma ORM", "Zustand", "TanStack Query", "Webhook", "v0", "Cursor"],
-    url: "https://my-flair-six.vercel.app/",
-  },
-  {
-    name: "Mappeos",
-    role: "Frontend Web Developer — Freelance",
-    period: "May 2024 – Dec 2024",
-    type: "Freelance",
-    description: [
-      "Created web interfaces (dashboard, privacy pages) and managed the loading strategy and reusable components of the Mappeos web application.",
-    ],
-    tech: ["Next.js", "TypeScript", "TailwindCSS", "Zustand", "React Hook Form", "Axios", "MDX", "GitHub", "shadcn/ui", "Kanban Board", "SSR"],
-    url: "https://mappeos.com",
-  },
-  {
     name: "48 Projects",
     role: "Organisation Member — K48",
     period: "Jul 2025 – Nov 2025",
@@ -61,7 +39,7 @@ export const projects: Project[] = [
     name: "Blur",
     role: "Project Owner | Community Builder | Contributor",
     period: "Aug 2025 – Feb 2026",
-    type: "Personal",
+    type: "Community",
     description: [
       "Open-source racing event management platform. Modern web application for managing racing events, parties, and competitive gameplay with real-time race tracking and comprehensive user management.",
       "Features include party management, real-time race tracking, score system, map integration, car attribution, dark mode, and mobile-first responsive design.",
@@ -74,5 +52,27 @@ export const projects: Project[] = [
       "Hibernate", "Swagger", "MapStruct", "Docker",
     ],
     url: "https://blur-delta.vercel.app/",
+  },
+  {
+    name: "MyFlair",
+    role: "Lead Frontend Developer — Webinflu",
+    period: "Jul 2024 – Jan 2026",
+    type: "Freelance",
+    description: [
+      "Responsible for the complete frontend architecture and its development for the MyFlair project.",
+    ],
+    tech: ["Next.js", "TypeScript", "TailwindCSS", "shadcn/ui", "Prisma ORM", "Zustand", "TanStack Query", "Webhook", "v0", "Cursor"],
+    url: "https://my-flair-six.vercel.app/",
+  },
+  {
+    name: "Mappeos",
+    role: "Frontend Web Developer — Freelance",
+    period: "May 2024 – Dec 2024",
+    type: "Freelance",
+    description: [
+      "Created web interfaces (dashboard, privacy pages) and managed the loading strategy and reusable components of the Mappeos web application.",
+    ],
+    tech: ["Next.js", "TypeScript", "TailwindCSS", "Zustand", "React Hook Form", "Axios", "MDX", "GitHub", "shadcn/ui", "Kanban Board", "SSR"],
+    url: "https://mappeos.com",
   },
 ];
