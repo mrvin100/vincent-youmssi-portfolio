@@ -18,7 +18,7 @@ export const experience: Experience[] = [
     description: [
       "Built the foundation's website (Home, About, Partners, Blog) on both frontend and backend using Next.js and Strapi CMS.",
     ],
-    tech: ["Next.js", "Strapi CMS"],
+    tech: ["Next.js", "Strapi CMS", "Cloudinary", "Neon", "Dokploy", "VPS", "SSG", "ISR"],
   },
   {
     role: "Software Engineer",
@@ -30,7 +30,7 @@ export const experience: Experience[] = [
       "Designed the new homepage for Deluxe Yachting Zurich, a yacht charter agency in Germany.",
       "Led the development of the Kelanie Designs project (\"Coming Soon\" page), an Italian luxury jewelry brand.",
     ],
-    tech: ["Next.js", "TypeScript", "TailwindCSS"],
+    tech: ["Medusa.js", "Mautic CRM", "Strapi CMS", "vanilla-cookieconsent", "Google Analytics", "Docker", "SonarQube", "Cypress"],
   },
   {
     role: "Web Developer",
@@ -52,7 +52,7 @@ export const experience: Experience[] = [
     description: [
       "Responsible for the complete frontend architecture and its development for the MyFlair project.",
     ],
-    tech: ["Next.js", "TypeScript", "TailwindCSS", "shadcn/ui"],
+    tech: ["Next.js", "TypeScript", "TailwindCSS", "shadcn/ui", "Prisma ORM", "Zustand", "TanStack Query", "Webhook"],
   },
   {
     role: "Frontend Web Developer",
@@ -63,7 +63,7 @@ export const experience: Experience[] = [
     description: [
       "Created web interfaces (dashboard, privacy pages) and managed the loading strategy and reusable components of the Mappeos web application.",
     ],
-    tech: ["Next.js", "TypeScript", "TailwindCSS"],
+    tech: ["Next.js", "TypeScript", "TailwindCSS", "Zustand", "React Hook Form", "Axios", "MDX", "GitHub", "shadcn/ui"],
   },
   {
     role: "Coordinator / Manager",
@@ -72,7 +72,7 @@ export const experience: Experience[] = [
     location: "Tradex Emana, Yaoundé",
     period: "Nov 2023 – May 2024",
     description: [
-      "Marketing and web agency: managed client appointments for commercial purposes and validated the quality of projects ready for delivery, both technically and non-technically.",
+      "Worked at a marketing and web agency where I managed client appointments for commercial purposes and was also responsible for validating the quality of projects ready for delivery, both technically and non-technically.",
     ],
     tech: [],
   },
