@@ -64,6 +64,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://vincent-youmssi-portfolio.vercel.app",
   },
+  verification: {
+    google: "LBZPSvVcWOuzadl2yzjdnfKY0u7GlVgML03aCZfwL24",
+  },
 };
 
 export default function RootLayout({
