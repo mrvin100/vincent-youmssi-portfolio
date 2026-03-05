@@ -1,0 +1,95 @@
+import type { Metadata } from "next";
+import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
+import { personal } from "@/data/personal";
+
+export const metadata: Metadata = {
+  title: "Contact",
+  description: `Get in touch with ${personal.name}. Schedule a call, view the resume, or connect on social media.`,
+};
+
+export default function ContactPage() {
+  return (
+    <section className="space-y-8">
+      <div className="space-y-2">
+        <h1 className="text-3xl font-bold tracking-tight text-neutral-900">
+          Contact
+        </h1>
+        <p className="text-neutral-500">
+          Let&apos;s connect. Schedule a call or find me on social media.
+        </p>
+      </div>
+
+      <div className="space-y-4">
+        <h2 className="text-xl font-semibold text-neutral-900">
+          Book a call
+        </h2>
+        <p className="text-neutral-600">
+          Schedule a 30-minute call to discuss projects, collaboration, or
+          opportunities.
+        </p>
+        <Button asChild>
+          <a href={personal.calLink} target="_blank" rel="noopener noreferrer">
+            Schedule on Cal.com
+          </a>
+        </Button>
+      </div>
+
+      <Separator />
+
+      <div className="space-y-4">
+        <h2 className="text-xl font-semibold text-neutral-900">Resume</h2>
+        <div className="flex flex-col gap-2">
+          <a
+            href={personal.cvLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 underline underline-offset-4 hover:text-blue-800"
+          >
+            View resume online (Google Docs)
+          </a>
+          <a
+            href="/resume-vincent-youmssi.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 underline underline-offset-4 hover:text-blue-800"
+          >
+            Download resume (PDF)
+          </a>
+        </div>
+      </div>
+
+      <Separator />
+
+      <div className="space-y-4">
+        <h2 className="text-xl font-semibold text-neutral-900">Social</h2>
+        <div className="flex flex-col gap-2">
+          <a
+            href={`https://github.com/${personal.social.github}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 underline underline-offset-4 hover:text-blue-800"
+          >
+            GitHub
+          </a>
+          <a
+            href={`https://linkedin.com/in/${personal.social.linkedin}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 underline underline-offset-4 hover:text-blue-800"
+          >
+            LinkedIn
+          </a>
+          <a
+            href={`https://youtube.com/${personal.social.youtube}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 underline underline-offset-4 hover:text-blue-800"
+          >
+            YouTube
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}
