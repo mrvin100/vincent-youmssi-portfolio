@@ -53,6 +53,21 @@ export const certificationGroups: CertificationGroup[] = [
     ],
   },
   {
+    trainer: "Hackathons",
+    certifications: [
+      {
+        name: "EastHacks 2024 Participation",
+        summary: "Participated in EastHacks 2024 and created a project relating to sustainability.",
+        url: "https://ibb.co/dP3J35k",
+      },
+      {
+        name: "Cameroon International Tech Summit 2024 (CITS24)",
+        summary: "72-hour national hackathon at Hotel Franco Yaoundé. Represented the Centre Region among 350 innovators, showcasing creativity and teamwork to drive technology and innovation in Cameroon.",
+        url: "https://drive.google.com/file/d/11pG-CDpd9d8Hl96exMRKuBM2yN7KgTlZ/view?usp=sharing",
+      },
+    ],
+  },
+  {
     trainer: "Google",
     certifications: [
       {
