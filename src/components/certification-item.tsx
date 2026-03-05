@@ -39,7 +39,9 @@ export function CertificationGroupItem({ group }: { group: CertificationGroup })
                   </a>
                 )}
               </div>
-              <p className="text-sm text-neutral-500">{cert.summary}</p>
+              {cert.summary && (
+                <p className="text-sm text-neutral-500">{cert.summary}</p>
+              )}
             </li>
           ))}
         </ul>
