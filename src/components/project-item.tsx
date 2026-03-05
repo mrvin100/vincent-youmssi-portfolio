@@ -1,7 +1,6 @@
 "use client";
 
 import {
-  Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
@@ -65,27 +64,23 @@ export function ProjectItem({ item }: { item: Project }) {
               <p className="mb-2 text-sm font-medium text-neutral-700">
                 Projects
               </p>
-              <Accordion type="single" collapsible className="w-full">
+              <ul className="space-y-1">
                 {item.subProjects.map((sub) => (
-                  <AccordionItem key={sub.name} value={sub.name}>
-                    <AccordionTrigger className="py-2 text-sm hover:no-underline">
-                      {sub.name}
-                    </AccordionTrigger>
-                    <AccordionContent>
-                      {sub.url && (
-                        <a
-                          href={sub.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-sm text-blue-600 underline underline-offset-4 hover:text-blue-800"
-                        >
-                          Demo
-                        </a>
-                      )}
-                    </AccordionContent>
-                  </AccordionItem>
+                  <li key={sub.name} className="flex items-center gap-2 text-sm text-neutral-600">
+                    <span>{sub.name}</span>
+                    {sub.url && (
+                      <a
+                        href={sub.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-600 underline underline-offset-4 hover:text-blue-800"
+                      >
+                        Demo
+                      </a>
+                    )}
+                  </li>
                 ))}
-              </Accordion>
+              </ul>
             </div>
           )}
         </div>

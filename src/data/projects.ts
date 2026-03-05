@@ -45,7 +45,11 @@ export const projects: Project[] = [
     description: [
       "Contributed to an organisation to build five full-stack web apps.",
     ],
-    tech: ["Next.js", "TypeScript", "TailwindCSS", "MongoDB", "Prisma ORM", "GitHub"],
+    tech: [
+      "Next.js", "shadcn/ui", "TanStack Query", "Axios", "Spring Boot",
+      "MinIO", "Docker", "Render", "Vercel", "NextAuth", "Zod", "Stripe",
+      "Chart.js", "PDF-Box", "eDrive", "FullCalendar", "WebSocket",
+    ],
     subProjects: [
       { name: "Grade Management System", url: "https://grady48.vercel.app/" },
       { name: "Internship Management System", url: "https://stagelink-cameroon.vercel.app/" },
@@ -54,12 +58,21 @@ export const projects: Project[] = [
     ],
   },
   {
-    name: "Blur App",
+    name: "Blur",
     role: "Project Owner | Community Builder | Contributor",
     period: "Aug 2025 – Feb 2026",
     type: "Personal",
-    description: [],
-    tech: [],
+    description: [
+      "Open-source racing event management platform. Modern web application for managing racing events, parties, and competitive gameplay with real-time race tracking and comprehensive user management.",
+      "Features include party management, real-time race tracking, score system, map integration, car attribution, dark mode, and mobile-first responsive design.",
+    ],
+    tech: [
+      "Next.js", "React", "TypeScript", "TailwindCSS", "Radix UI",
+      "TanStack Query", "Zustand", "React Hook Form", "Zod", "Better Auth",
+      "next-themes", "Sonner", "Lucide Icons",
+      "Spring Boot", "Java", "PostgreSQL", "Spring Security", "JWT",
+      "Hibernate", "Swagger", "MapStruct", "Docker",
+    ],
     url: "https://blur-delta.vercel.app/",
   },
 ];
