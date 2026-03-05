@@ -19,7 +19,7 @@ export default function AboutPage() {
         <p className="text-neutral-500">{personal.location}</p>
       </div>
 
-      <p className="leading-relaxed text-neutral-600">{personal.bio}</p>
+      <p className="leading-relaxed text-neutral-600">{personal.aboutBio}</p>
 
       <div className="flex gap-8 text-sm">
         <div>
@@ -37,7 +37,9 @@ export default function AboutPage() {
       <Separator />
 
       <div className="space-y-6">
-        <h2 className="text-xl font-semibold text-neutral-900">Skills</h2>
+        <h2 className="text-xl font-semibold text-neutral-900">
+          Positions & Profiles
+        </h2>
         {skills.map((group) => (
           <SkillGroup key={group.category} group={group} />
         ))}

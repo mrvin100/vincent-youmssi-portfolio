@@ -1,7 +1,9 @@
 export const personal = {
   name: "Vincent Youmssi",
   title: "Software Engineer",
-  bio: "Curious software engineer who enjoys tackling challenges and finding simple, effective solutions. Focused on web development with Next.js, React, TypeScript, and modern web technologies.",
+  bio: "Curious software engineer who enjoys tackling challenges and finding simple, effective solutions. Building things for the web, one step at a time.",
+  aboutBio:
+    "I believe only the struggle sets you free. Your dream doesn't have an expiration date — take a deep breath and try again. I move forward at my own pace, with open eyes and an honest mind. Simple, authentic, clear.",
   location: "Yaoundé, Cameroon",
   yearsOfExp: "3+",
   calLink: "https://cal.com/vincent-youmssi/30min",
@@ -13,5 +15,5 @@ export const personal = {
     youtube: "@jean-doe",
   },
   languages: ["English (C1)", "French (Native)"],
-  hobbies: ["Books", "Movies", "Digital Marketing"],
+  hobbies: ["Books", "Movies"],
 } as const;
