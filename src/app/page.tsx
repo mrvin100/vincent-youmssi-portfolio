@@ -14,18 +14,18 @@ export default function Home() {
   return (
     <section className="space-y-8">
       <div className="space-y-2">
-        <h1 className="text-3xl font-bold tracking-tight text-neutral-900">
+        <h1 className="text-3xl font-bold tracking-tight text-foreground">
           {personal.name}
         </h1>
-        <p className="text-neutral-500">{personal.title}</p>
+        <p className="text-muted-foreground">{personal.title}</p>
       </div>
-      <p className="leading-relaxed text-neutral-600">{personal.bio}</p>
+      <p className="leading-relaxed text-muted-foreground">{personal.bio}</p>
       <nav className="flex flex-col gap-2">
         {navItems.map((item) => (
           <Link
             key={item.href}
             href={item.href}
-            className="text-neutral-600 underline underline-offset-4 hover:text-neutral-900"
+            className="text-muted-foreground underline underline-offset-4 hover:text-foreground"
           >
             {item.label}
           </Link>

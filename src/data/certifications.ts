@@ -70,7 +70,7 @@ export const certificationGroups: CertificationGroup[] = [
   },
   {
     trainer: "Microsoft Learn",
-    url: "https://learn.microsoft.com/fr-fr/users/mrvin100/",
+    url: "https://learn.microsoft.com/en-us/users/mrvin100/",
     certifications: [
       { name: "Build JavaScript Applications Using TypeScript", summary: "Complete learning path." },
       { name: "Organize Code Using TypeScript Namespaces" },

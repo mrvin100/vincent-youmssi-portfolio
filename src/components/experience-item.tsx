@@ -13,20 +13,20 @@ export function ExperienceItem({ item }: { item: Experience }) {
     <AccordionItem value={item.company + item.period}>
       <AccordionTrigger className="hover:no-underline">
         <div className="flex flex-col items-start gap-1 text-left">
-          <p className="font-semibold text-neutral-900">
+          <p className="font-semibold text-foreground">
             {item.role}{" "}
-            <span className="font-normal text-neutral-500">
+            <span className="font-normal text-muted-foreground">
               @ {item.company}
             </span>
           </p>
-          <p className="text-sm text-neutral-500">
+          <p className="text-sm text-muted-foreground">
             {item.period} · {item.type} · {item.location}
           </p>
         </div>
       </AccordionTrigger>
       <AccordionContent>
         {item.description.length > 0 && (
-          <ul className="mb-3 list-inside list-disc space-y-1 text-neutral-600">
+          <ul className="mb-3 list-inside list-disc space-y-1 text-muted-foreground">
             {item.description.map((point, i) => (
               <li key={i}>{point}</li>
             ))}

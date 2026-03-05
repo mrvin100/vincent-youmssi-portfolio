@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function ProjectsPage() {
   return (
     <section className="space-y-8">
-      <h1 className="text-3xl font-bold tracking-tight text-neutral-900">
+      <h1 className="text-3xl font-bold tracking-tight text-foreground">
         Projects
       </h1>
       <ProjectsAccordion items={projects} />

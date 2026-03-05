@@ -13,31 +13,31 @@ export default function AboutPage() {
   return (
     <section className="space-y-8">
       <div className="space-y-2">
-        <h1 className="text-3xl font-bold tracking-tight text-neutral-900">
+        <h1 className="text-3xl font-bold tracking-tight text-foreground">
           About
         </h1>
-        <p className="text-neutral-500">{personal.location}</p>
+        <p className="text-muted-foreground">{personal.location}</p>
       </div>
 
-      <p className="leading-relaxed text-neutral-600">{personal.aboutBio}</p>
+      <p className="leading-relaxed text-muted-foreground">{personal.aboutBio}</p>
 
       <div className="flex gap-8 text-sm">
         <div>
-          <p className="text-2xl font-bold text-neutral-900">
+          <p className="text-2xl font-bold text-foreground">
             {personal.yearsOfExp}
           </p>
-          <p className="text-neutral-500">Years experience</p>
+          <p className="text-muted-foreground">Years experience</p>
         </div>
         <div>
-          <p className="text-2xl font-bold text-neutral-900">6+</p>
-          <p className="text-neutral-500">Companies</p>
+          <p className="text-2xl font-bold text-foreground">6+</p>
+          <p className="text-muted-foreground">Companies</p>
         </div>
       </div>
 
       <Separator />
 
       <div className="space-y-6">
-        <h2 className="text-xl font-semibold text-neutral-900">
+        <h2 className="text-xl font-semibold text-foreground">
           Positions & Profiles
         </h2>
         {skills.map((group) => (
@@ -49,16 +49,16 @@ export default function AboutPage() {
 
       <div className="flex gap-12 text-sm">
         <div>
-          <h2 className="mb-2 font-semibold text-neutral-900">Languages</h2>
-          <ul className="space-y-1 text-neutral-600">
+          <h2 className="mb-2 font-semibold text-foreground">Languages</h2>
+          <ul className="space-y-1 text-muted-foreground">
             {personal.languages.map((lang) => (
               <li key={lang}>{lang}</li>
             ))}
           </ul>
         </div>
         <div>
-          <h2 className="mb-2 font-semibold text-neutral-900">Hobbies</h2>
-          <ul className="space-y-1 text-neutral-600">
+          <h2 className="mb-2 font-semibold text-foreground">Hobbies</h2>
+          <ul className="space-y-1 text-muted-foreground">
             {personal.hobbies.map((h) => (
               <li key={h}>{h}</li>
             ))}
@@ -66,12 +66,12 @@ export default function AboutPage() {
         </div>
       </div>
 
-      <p className="text-sm text-neutral-400">
+      <p className="text-sm text-muted-foreground/60">
         <a
           href={personal.cvLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="underline underline-offset-4 hover:text-neutral-500"
+          className="underline underline-offset-4 hover:text-muted-foreground"
         >
           Resume
         </a>
