@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-import { Separator } from "@/components/ui/separator";
-import { CertificationItem } from "@/components/certification-item";
-import { certifications } from "@/data/certifications";
+import { CertificationsAccordion } from "@/components/certifications-accordion";
+import { certificationGroups } from "@/data/certifications";
 
 export const metadata: Metadata = {
   title: "Certifications",
@@ -15,12 +14,7 @@ export default function CertificationsPage() {
       <h1 className="text-3xl font-bold tracking-tight text-neutral-900">
         Certifications
       </h1>
-      <ul className="divide-y divide-neutral-200">
-        {certifications.map((item) => (
-          <CertificationItem key={item.name} item={item} />
-        ))}
-      </ul>
-      <Separator />
+      <CertificationsAccordion groups={certificationGroups} />
     </section>
   );
 }
