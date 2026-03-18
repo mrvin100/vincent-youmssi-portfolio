@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Nav } from "@/components/nav";
 import { Footer } from "@/components/footer";
@@ -84,6 +85,7 @@ export default function RootLayout({
           <main className="min-h-[calc(100vh-12rem)] py-8">{children}</main>
           <Footer />
         </ThemeProvider>
+        <SpeedInsights />
         <script
           type="application/ld+json"
           suppressHydrationWarning
