@@ -1,14 +1,6 @@
 import Link from "next/link";
 import { personal } from "@/data/personal";
-
-const navItems = [
-  { href: "/about", label: "About me" },
-  { href: "/experience", label: "Work experience" },
-  { href: "/projects", label: "Projects" },
-  { href: "/education", label: "Education" },
-  { href: "/certifications", label: "Certifications" },
-  { href: "/contact", label: "Get in touch" },
-];
+import { HOME_NAV_ITEMS } from "@/data/routes";
 
 export default function Home() {
   return (
@@ -21,7 +13,7 @@ export default function Home() {
       </div>
       <p className="leading-relaxed text-muted-foreground">{personal.bio}</p>
       <nav className="flex flex-col gap-2">
-        {navItems.map((item) => (
+        {HOME_NAV_ITEMS.map((item) => (
           <Link
             key={item.href}
             href={item.href}

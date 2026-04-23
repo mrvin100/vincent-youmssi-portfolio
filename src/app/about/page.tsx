@@ -1,12 +1,17 @@
 import type { Metadata } from "next";
 import { Separator } from "@/components/ui/separator";
 import { SkillGroup } from "@/components/skill-group";
+import { RelatedNav } from "@/components/related-nav";
 import { personal } from "@/data/personal";
 import { skills } from "@/data/skills";
+import { ROUTES } from "@/data/routes";
 
 export const metadata: Metadata = {
   title: "About",
-  description: `Learn more about ${personal.name}, a software engineer focused on web development, based in ${personal.location}.`,
+  description: `Learn more about ${personal.name}, a software engineer and full-stack developer specializing in Next.js, Spring Boot, identity systems (OAuth2, JWT), DevOps, and AI. Based in ${personal.location}.`,
+  alternates: {
+    canonical: ROUTES.ABOUT,
+  },
 };
 
 export default function AboutPage() {
@@ -76,6 +81,13 @@ export default function AboutPage() {
           Resume
         </a>
       </p>
+
+      <RelatedNav
+        links={[
+          { href: ROUTES.EXPERIENCE, label: "Work Experience" },
+          { href: ROUTES.PROJECTS, label: "Projects" },
+        ]}
+      />
     </section>
   );
 }
