@@ -69,6 +69,15 @@ export const certificationGroups: CertificationGroup[] = [
     ],
   },
   {
+    trainer: "AWS AI & ML Scholars 2026",
+    certifications: [
+      {
+        name: "Future AWS Agentic Engineer",
+        summary: "Started: 23/04/2026 · In Progress. Three-phase program: AI Practitioner foundation (generative AI, NLP, computer vision, AWS services), 3-month AWS Skill Builder access, and agentic AI engineering Nanodegree track (top 4,500 learners) with portfolio-ready projects.",
+      },
+    ],
+  },
+  {
     trainer: "Microsoft Learn",
     url: "https://learn.microsoft.com/en-us/users/mrvin100/",
     certifications: [

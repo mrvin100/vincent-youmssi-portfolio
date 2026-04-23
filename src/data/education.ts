@@ -22,6 +22,6 @@ export const education: Education[] = [
     degree: "Hight School Dimploma — Mathematics and Physical Sciences",
     institution: "Ndogpassi High School",
     location: "Entrée Lycée, Douala, Cameroon",
-    period: "May 2020",
+    period: "Jul 2020",
   },
 ];
