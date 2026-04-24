@@ -16,12 +16,34 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    name: "48 Projects",
+    name: "48Org",
     role: "Organisation Member — K48",
-    period: "Jul 2025 – Nov 2025",
+    period: "Jan 2026 – Present",
     type: "Community",
     description: [
-      "Contributed to an organisation to build five full-stack web apps.",
+      "Central organization owning the identity and alumni platforms for the K48 community.",
+      "48ID: API-first Identity-as-a-Service (IDaaS) for the K48 ecosystem. Eliminates fragmented authentication by providing centralized identity, JWT/OAuth2 token issuance, RBAC, and SSO. Built with Spring Boot 3 (Spring Modulith), PostgreSQL, Redis, and Next.js 16 BFF admin portal.",
+      "48Hub: Alumni directory and networking platform. Authenticates exclusively via 48ID (OAuth2). Verifies student identity before displaying profiles.",
+      "Ecosystem role: Trust anchor for 48Hub, LP48, and future K48 apps. SSO-ready; student developers integrate auth in less than one day.",
+    ],
+    tech: [
+      "Spring Boot 3", "Java 21", "Spring Modulith", "PostgreSQL", "Redis",
+      "Next.js 16", "TypeScript", "TailwindCSS", "shadcn/ui", "TanStack Query",
+      "Zustand", "React Hook Form", "Zod", "ky", "Docker", "Vercel",
+      "OAuth2", "OpenID Connect", "JWT", "bcrypt",
+    ],
+    subProjects: [
+      { name: "48ID", url: "https://48id.vercel.app/" },
+      { name: "48Hub", url: "https://48hub.vercel.app/" },
+    ],
+  },
+  {
+    name: "48 Projects",
+    role: "Organisation Member — K48",
+    period: "Jul 2025 – Jan 2026",
+    type: "Community",
+    description: [
+      "Contributed to an organisation to build five enterprise-grade full-stack web apps.",
     ],
     tech: [
       "Next.js", "shadcn/ui", "TanStack Query", "Axios", "Spring Boot",
@@ -37,7 +59,7 @@ export const projects: Project[] = [
   },
   {
     name: "Blur",
-    role: "Project Owner | Community Builder | Contributor",
+    role: "Community Builder | Contributor",
     period: "Aug 2025 – Feb 2026",
     type: "Community",
     description: [

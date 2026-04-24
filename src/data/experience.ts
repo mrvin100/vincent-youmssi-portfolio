@@ -9,6 +9,51 @@ export interface Experience {
 }
 
 export const experience: Experience[] = [
+    {
+    role: "Software Engineer",
+    type: "Full-time",
+    company: "Afriland First Bank",
+    location: "Coleah Conakry, Guinea",
+    period: "Apr 2026 – Present",
+    description: [
+      "Contribute to the RTGS (Real Time Gross Settlement) middleware initiative: automating MT103/FT100 message flows to the Central Bank, eliminating manual double-entry across ALT Bank and the FTG platform.",
+      "Develop programmatic APIs for the ALT Bank Core Banking System (CBS) to enable modern service integration.",
+      "Architect a unified Monétique & Digitale resident that centralizes banking flows toward ALT Bank, replacing previously separated SARA and Monétique systems.",
+    ],
+    tech: ["Java", "Spring Boot", "REST APIs", "Middleware Architecture", "Banking Protocols", "RTGS", "MT103", "FT100"],
+  },
+  {
+    role: "Project Manager | Teacher",
+    type: "Community",
+    company: "48Org",
+    location: "Yaoundé, Cameroon",
+    period: "Jan 2026 – Present",
+    description: [
+      "Led architecture and delivery of the 48ID identity platform and 48Hub alumni portal.",
+      "Defined API-first design philosophy (OAuth2, OIDC, JWT), built 4-phase roadmap, and mentored student developers on secure auth integration.",
+      "Managed ecosystem-wide standards to eliminate duplicated login systems across K48 projects.",
+    ],
+    tech: [
+      "Spring Boot", "Next.js", "OAuth2", "OpenID Connect", "JWT",
+      "PostgreSQL", "Redis", "Docker", "Vercel",
+    ],
+  },
+  {
+    role: "DevOps | Full Stack Web Developer",
+    type: "Community",
+    company: "48Projects",
+    location: "Yaoundé, Cameroon",
+    period: "Jul 2025 – Jan 2026",
+    description: [
+      "Delivered four full-stack community platforms for the K48 ecosystem: an academic grade manager with automated averages and official PDF/Excel transcript generation; a registration portal with multi-step onboarding, secure document upload, integrated payments, and real-time status tracking; Cameroon's first student internship platform with profile-based matching and convention signing workflow; and a clinical management system with real-time scheduling, secure internal chat, patient records, billing, and role-based access.",
+      "Implemented Docker containerization, zero-config Vercel deployments, and security hardening across all projects.",
+    ],
+    tech: [
+      "Next.js", "shadcn/ui", "TanStack Query", "Axios", "Spring Boot",
+      "MinIO", "Docker", "Render", "Vercel", "NextAuth", "Zod", "Stripe",
+      "Chart.js", "PDF-Box", "eDrive", "FullCalendar", "WebSocket",
+    ],
+  },
   {
     role: "Software Engineer",
     type: "Internship",

@@ -24,7 +24,7 @@ export const skills: SkillGroup[] = [
       "Problem Solving",
       "Communication",
       "Team Collaboration",
-      "Adaptability",
+      "Imagination",
     ],
   },
 ];

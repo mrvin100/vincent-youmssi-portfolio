@@ -1,22 +1,13 @@
 import type { MetadataRoute } from "next";
+import { SITEMAP_ROUTES, ROUTES } from "@/data/routes";
 
 const baseUrl = "https://vincent-youmssi-portfolio.vercel.app";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const routes = [
-    "",
-    "/about",
-    "/experience",
-    "/projects",
-    "/education",
-    "/certifications",
-    "/contact",
-  ];
-
-  return routes.map((route) => ({
+  return SITEMAP_ROUTES.map((route) => ({
     url: `${baseUrl}${route}`,
-    lastModified: new Date(),
+    lastModified: new Date("2026-04-23"),
     changeFrequency: "monthly" as const,
-    priority: route === "" ? 1 : 0.8,
+    priority: route === ROUTES.HOME ? 1 : 0.8,
   }));
 }

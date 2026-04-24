@@ -2,10 +2,15 @@ import type { Metadata } from "next";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { personal } from "@/data/personal";
+import { RelatedNav } from "@/components/related-nav";
+import { ROUTES } from "@/data/routes";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: `Get in touch with ${personal.name}. Schedule a call or connect on social media.`,
+  description: `Contact ${personal.name}. Software engineer open to new opportunities and collaborations.`,
+  alternates: {
+    canonical: ROUTES.CONTACT,
+  },
 };
 
 export default function ContactPage() {
@@ -68,6 +73,12 @@ export default function ContactPage() {
           </a>
         </div>
       </div>
+      <RelatedNav
+        links={[
+          { href: ROUTES.ABOUT, label: "About" },
+          { href: ROUTES.EXPERIENCE, label: "Work Experience" },
+        ]}
+      />
     </section>
   );
 }

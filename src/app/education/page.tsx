@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
+import { RelatedNav } from "@/components/related-nav";
 import { education } from "@/data/education";
+import { ROUTES } from "@/data/routes";
 
 export const metadata: Metadata = {
   title: "Education",
-  description:
-    "Academic background and education of Vincent Youmssi.",
+  description: "Academic background and education of Vincent Youmssi.",
+  alternates: {
+    canonical: ROUTES.EDUCATION,
+  },
 };
 
 export default function EducationPage() {
@@ -25,6 +29,12 @@ export default function EducationPage() {
           </article>
         ))}
       </div>
+      <RelatedNav
+        links={[
+          { href: ROUTES.CERTIFICATIONS, label: "Certifications" },
+          { href: ROUTES.ABOUT, label: "About" },
+        ]}
+      />
     </section>
   );
 }
